@@ -1,0 +1,75 @@
+Rans-MacBook-Pro-3:insight_testsuite dingran$ ./run_tests.sh
+batch_log: ./log_input/batch_log.json
+stream_log: ./log_input/stream_log.json
+output_file: ./log_output/flagged_purchases.json
+UserNetwork debug_mode = False
+read ./log_input/batch_log.json
+processing ./log_input/batch_log.json
+  0%|                                                                                                                                                                                                  | 0/7 [00:00<?, ?it/s]updated D==3, T==50
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 7/7 [00:00<00:00, 11531.86it/s]
+read ./log_input/stream_log.json
+processing ./log_input/stream_log.json
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 5349.88it/s]
+output to ./log_output/flagged_purchases.json
+[PASS]: test_1
+batch_log: ./log_input/batch_log.json
+stream_log: ./log_input/stream_log.json
+output_file: ./log_output/flagged_purchases.json
+UserNetwork debug_mode = False
+read ./log_input/batch_log.json
+processing ./log_input/batch_log.json
+  0%|                                                                                                                                                                                                 | 0/14 [00:00<?, ?it/s]updated D==3, T==50
+failed to parse line 1, skip
+failed to parse line 2, skip
+failed to parse line 3, skip
+illegal log entry: {u'timestamp': u'2017-06-13 11:33:01', u'event_type': u'purchase', u'id': u'1'}, skip
+illegal log entry: {u'timestamp': u'2017-06-13 11:33:01', u'amount': u'16.83', u'even1t_type': u'purchase', u'id': u'1'}, skip
+illegal log entry: {}, skip
+failed to parse line 7, skip
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 14/14 [00:00<00:00, 37932.98it/s]
+read ./log_input/stream_log.json
+processing ./log_input/stream_log.json
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 7084.97it/s]
+output to ./log_output/flagged_purchases.json
+[PASS]: test_messy_log_handling
+batch_log: ./log_input/batch_log.json
+stream_log: ./log_input/stream_log.json
+output_file: ./log_output/flagged_purchases.json
+UserNetwork debug_mode = False
+read ./log_input/batch_log.json
+processing ./log_input/batch_log.json
+  0%|                                                                                                                                                                                                | 0/208 [00:00<?, ?it/s]updated D==3, T==50
+failed to parse line 190, skip
+failed to parse line 191, skip
+failed to parse line 192, skip
+failed to parse line 193, skip
+failed to parse line 194, skip
+failed to parse line 195, skip
+failed to parse line 196, skip
+failed to parse line 197, skip
+failed to parse line 198, skip
+failed to parse line 199, skip
+failed to parse line 200, skip
+failed to parse line 201, skip
+failed to parse line 202, skip
+failed to parse line 204, skip
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 208/208 [00:00<00:00, 63337.83it/s]
+read ./log_input/stream_log.json
+processing ./log_input/stream_log.json
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 4650.00it/s]
+output to ./log_output/flagged_purchases.json
+[PASS]: test_numerical_correctness
+batch_log: ./log_input/batch_log.json
+stream_log: ./log_input/stream_log.json
+output_file: ./log_output/flagged_purchases.json
+UserNetwork debug_mode = False
+read ./log_input/batch_log.json
+processing ./log_input/batch_log.json
+  0%|                                                                                                                                                                                             | 0/500000 [00:00<?, ?it/s]updated D==2, T==50
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 500000/500000 [00:06<00:00, 71846.10it/s]
+read ./log_input/stream_log.json
+processing ./log_input/stream_log.json
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [00:00<00:00, 1243.50it/s]
+output to ./log_output/flagged_purchases.json
+[PASS]: test_on_sample_set
+[Mon Jul  3 14:49:57 EDT 2017] 4 of 4 tests passed
