@@ -142,7 +142,7 @@ Then, runtime for step b~c vs N_friends
 
 ![](images/find_friends_time_vs_N_friends.png)
 
-Indeed both scales linearly with N_firneds, except for the very end where a small number of recording resulted in large variance.
+Indeed both scales linearly with N_friends, except for the very end where a small number of recording resulted in large variance.
 
 
 
