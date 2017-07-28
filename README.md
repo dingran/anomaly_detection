@@ -13,7 +13,7 @@ Table of Contents
 * [src/process_log.py](src/process_log.py): all the source code for this project
 * [src/analyze_complexity.ipynb](src/analyze_complexity.ipynb): jupyter notebook for investigating algorithm complexity
 
-Other files and overall folder structure follow the guidelines here at [README_original.md](README_original.md)
+Other files and overall folder structure follow the guidelines here at [README_original.md](README_original.md) (read this first for background)
 
 Test results before submission in [final_test_log.txt](final_test_log.txt)
 
